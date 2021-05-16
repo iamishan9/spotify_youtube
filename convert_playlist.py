@@ -1,6 +1,20 @@
-# export you spotify client id and secret as
-# export SPOTIPY_CLIENT_ID='your id'
-# export SPOTIPY_CLIENT_SECRET='your secret'
+'''
+TODO:
+- config file for auth
+- comments
+- proper readme file
+'''
+
+
+
+'''
+before running the python file:
+
+export your spotify client id and secret as
+    export SPOTIPY_CLIENT_ID='your id'
+    export SPOTIPY_CLIENT_SECRET='your secret'
+'''
+
 
 import sys
 import spotipy
@@ -28,9 +42,7 @@ def add_tracks(tracks):
 
         ytmusic.add_playlist_items(playlistId, [result['videoId']])
         print('TRACK ADDED => {}  {}'.format(i, track_details))
-        # print('DETAILS => {}'.format(result))
-        # print('\n\n\n')
-
+        
 
 username = 'spotify'
 
